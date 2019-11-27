@@ -1,2 +1,2 @@
-include ':app', ':yandexmaps'
+include ':app', ':yandexmaps', ':yandexdriver'
 rootProject.name='lablesson6'

@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements UserLocationObjec
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        loadUserLocationLayer();
         super.onCreate(savedInstanceState);
 /**
  * Задайте API-ключ перед инициализацией MapKitFactory.
@@ -119,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements UserLocationObjec
         userLocationView.getPin().setIcon(ImageProvider.fromResource(
                 this, android.R.drawable.ic_menu_mylocation));
         userLocationView.getAccuracyCircle().setFillColor(Color.BLUE);
-        loadUserLocationLayer();
     }
     @Override
     public void onObjectRemoved(@NonNull UserLocationView userLocationView) {
